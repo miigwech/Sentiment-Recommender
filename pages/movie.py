@@ -118,7 +118,7 @@ if chcbtn:
 		
 
 def fetch_poster(movie_id):
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=9140135306d288021a84d6a620a52d3d&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key=&language=en-US".format(movie_id)
     data = requests.get(url)
     data = data.json()
     poster_path = data['poster_path']
